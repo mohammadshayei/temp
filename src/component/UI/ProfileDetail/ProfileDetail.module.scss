@@ -1,0 +1,34 @@
+.ProfileDetailContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  .imageContainer {
+    width: 2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    border-radius: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  span {
+    font-size: 12px;
+    margin-left: 0.5rem;
+    white-space:nowrap;
+  }
+  .DropDownContainer {
+    width: 29px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.4rem;
+    border-radius: 50%;
+    transition: background-color 500ms;
+    cursor: pointer;
+    color: rgb(209, 204, 204);
+  }
+}

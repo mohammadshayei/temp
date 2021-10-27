@@ -1,0 +1,70 @@
+@import "../../../assets/config/global";
+.DrawerContainer {
+  @extend %global-shadow;
+  height: 100%;
+  width: 25rem;
+  position: relative;
+  .add-box-container {
+    padding-top: 2rem;
+    .button-text {
+      display: flex;
+      font-size: 0.8rem;
+      .button-icon {
+        display: flex;
+        align-items: center;
+        margin-left: 0.5rem;
+      }
+    }
+    .input-creator,
+    select {
+      width: 80%;
+      display: inline-block;
+      font-size: 13px;
+      padding: 0.2rem;
+      border: 1px solid;
+      border-radius: 4px;
+      box-sizing: border-box;
+      outline: none;
+      margin-left: 10%;
+    }
+  }
+}
+.HideDrawer {
+  animation: ease-out 200ms forwards HideDrawer;
+}
+.ShowDrawer {
+  animation: ease-out 200ms forwards ShowDrawer;
+}
+@keyframes HideDrawer {
+  0% {
+    width: 25rem;
+    opacity: 0.9;
+  }
+  50% {
+    width: 15rem;
+    opacity: 0.4;
+  }
+  100% {
+    width: 2rem;
+    opacity: 1;
+
+    // transform: translateX(110%);
+  }
+}
+
+@keyframes ShowDrawer {
+  0% {
+    width: 1rem;
+    opacity: 0.1;
+  }
+  50% {
+    width: 16rem;
+    opacity: 0.6;
+  }
+  100% {
+    width: 25rem;
+    opacity: 1;
+
+    // transform: translateX(110%);
+  }
+}

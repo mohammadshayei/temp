@@ -1,0 +1,22 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  width: 100%;
+  height: 100%;
+  .card-body {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  .card-footer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5rem;
+    text-align: right;
+    background-color: transparent;
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,16 @@
+.HeaderContainer {
+  width: calc(13vw);
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 0.8rem;
+ 
+}
+
+@media screen and (max-width: 1300px) {
+  .HeaderContainer {
+    width: calc(17vw);
+  }
+}
